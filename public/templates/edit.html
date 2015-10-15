@@ -1,0 +1,23 @@
+<div ng-controller="EditToDoListController as vm">
+  <br>
+  <br>
+  <br>
+<!--  Start form -->
+  <form class="well container" ng-submit="vm.editToDoList()">
+    <label>Title</label>
+    <input required class="form-control" ng-model="vm.todos.title" placeholder="Title..."/>
+    <label>Body</label>
+    <input required class="form-control" ng-model="vm.todos.body" placeholder="Body..."/>
+    <label>Created</label>
+    <input required class="form-control" ng-model="vm.todos.created" placeholder="Created..."/>
+    <label>Deleted</label>
+    <input required class="form-control" ng-model="vm.todos.deleted" placeholder="Deleted..."/>
+    <br>
+    <br>
+    <div style="text-align:right;">
+      <button type="submit" class="btn btn-primary"> Submit </button>
+    </div>
+  </form>
+  <!-- Ends form -->
+
+</div>
